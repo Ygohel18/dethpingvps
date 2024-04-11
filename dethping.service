@@ -1,0 +1,13 @@
+[Unit]
+Description=DOS Attack Script
+After=network.target
+
+[Service]
+User=<YOUR_USERNAME>
+Group=<YOUR_GROUP>
+Type=simple
+ExecStart=/usr/bin/python3 /path/to/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
